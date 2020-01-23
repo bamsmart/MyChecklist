@@ -1,0 +1,145 @@
+{
+  "CHECKLIST": {
+    "ID": "1",
+    "NAME": "Some Checklist",
+    "GROUP 1": [
+      {
+        "NAME": "Qualify Form and Correct Approvals",
+        "VALUE": null,
+        "STATE": false,
+        "CHILDREN": [
+          {
+            "NAME": "Date of Death",
+            "VALUE": "2017-12-01",
+            "STATE": true,
+            "AUDIT": [
+              {
+                "ID": "R1-CORE\\MHOLLEY",
+                "TIMESTAMP": "08:10:15 AM 12/16/2017"
+              },
+              {
+                "ID": "R1-CORE\\KDEVULAPALLI",
+                "TIMESTAMP": "02:10:15 PM 12/16/2017"
+              }
+            ]
+          },
+          {
+            "NAME": "Manner of Death",
+            "VALUE": "Strangulation",
+            "STATE": true,
+            "AUDIT": [
+              {
+                "ID": "R1-CORE\\ANATH",
+                "TIMESTAMP": "10:10:15 AM 12/16/2017"
+              }
+            ]
+          },
+          {
+            "NAME": "SSN",
+            "VALUE": "123-45-6789",
+            "STATE": true,
+            "AUDIT": [
+              {
+                "ID": "R1-CORE\\BRMONTGOMERY",
+                "TIMESTAMP": "11:15:15 AM 12/16/2017"
+              }
+            ]
+          },
+          {
+            "NAME": "Deceased Name",
+            "VALUE": null,
+            "STATE": false
+          }
+        ]
+      }
+    ],
+    "GROUP 2": [
+      {
+        "NAME": "Security of Account",
+        "VALUE": null,
+        "STATE": true,
+        "CHILDREN": [
+          {
+            "NAME": "Altered Information",
+            "VALUE": true,
+            "STATE": true,
+            "AUDIT": [
+              {
+                "ID": "R1-CORE\\MHOLLEY",
+                "TIMESTAMP": "08:20:15 AM 12/16/2017"
+              }
+            ]
+          },
+          {
+            "NAME": "Signature Guarantee",
+            "VALUE": true,
+            "STATE": true,
+            "AUDIT": [
+              {
+                "ID": "R1-CORE\\MHOLLEY",
+                "TIMESTAMP": "08:21:15 AM 12/16/2017"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "GROUP 3": [
+      {
+        "NAME": "Used available prociessing tools",
+        "VALUE": null,
+        "STATE": true,
+        "CHILDREN": [
+          {
+            "NAME": "Backdate",
+            "VALUE": true,
+            "STATE": true,
+            "AUDIT": [
+              {
+                "ID": "R1-CORE\\JCURE",
+                "TIMESTAMP": "09:31:15 AM 12/16/2017"
+              }
+            ]
+          },
+          {
+            "NAME": "Complete Pay Process",
+            "VALUE": true,
+            "STATE": true,
+            "AUDIT": [
+              {
+                "ID": "R1-CORE\\JCURE",
+                "TIMESTAMP": "09:32:15 AM 12/16/2017"
+              }
+            ]
+          },
+          {
+            "NAME": "Payout Option",
+            "VALUE": true,
+            "STATE": true,
+            "AUDIT": [
+              {
+                "ID": "R1-CORE\\JCURE",
+                "TIMESTAMP": "09:33:15 AM 12/16/2017"
+              }
+            ]
+          },
+          {
+            "NAME": "Income Screen",
+            "VALUE": false,
+            "STATE": true,
+            "AUDIT": [
+              {
+                "ID": "R1-CORE\\JCURE",
+                "TIMESTAMP": "09:34:15 AM 12/16/2017"
+              },
+              {
+                "ID": "R1-CORE\\KDEVULAPALLI",
+                "TIMESTAMP": "04:16:15 PM 12/16/2017"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
