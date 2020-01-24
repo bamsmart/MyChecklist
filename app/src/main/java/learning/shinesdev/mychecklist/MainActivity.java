@@ -51,22 +51,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.btnSubmit:
+                List<Checklist> checklistData = adapter.getListData();
+                int len = adapter.getItemCount();
+                for (int i = 0 ; i < len; i++){
+                    System.out.println("item ke "+i + ": "+checklistData.get(i).getItem());
+                    System.out.println("isChecked ke "+i + ": "+checklistData.get(i).getChecked());
+                    System.out.println("notes ke "+i + ": "+checklistData.get(i).getNotes());
 
-                final AlertDialog.Builder builder = new AlertDialog.Builder(this);
-                builder.setTitle("Data")
-                        .setMessage(adapter.getListData().get(0).getNotes());
-
-                // Add the buttons
-                builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
-                    public void onClick(DialogInterface dialog, int id) {
-                    }
-                });
-                builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
-                    public void onClick(DialogInterface dialog, int id) {
-                        // User cancelled the dialog
-                    }
-                });
-                builder.show();
+                    System.out.println("============================================================ ");
+                }
 
                 break;
         }

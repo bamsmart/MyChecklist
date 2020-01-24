@@ -6,6 +6,10 @@ public class Checklist {
     boolean checked;
     String notes;
 
+
+    public Checklist() {
+    }
+
     public Checklist(String item, String resources) {
         this.item = item;
         this.resources = resources;
