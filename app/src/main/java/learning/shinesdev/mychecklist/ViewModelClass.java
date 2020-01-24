@@ -13,8 +13,8 @@ public class ViewModelClass extends ViewModel {
     private Application mapp;
 
 
-    void init(Application app){
-        if (mList != null){
+    void init(Application app) {
+        if (mList != null) {
             return;
         }
         mapp = app;
@@ -23,8 +23,8 @@ public class ViewModelClass extends ViewModel {
     }
 
 
-    public LiveData<List<Checklist>> getLisData(){
-        return  mList;
+    public LiveData<List<Checklist>> getLisData() {
+        return mList;
     }
 
 }

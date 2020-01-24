@@ -16,9 +16,9 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 import java.util.List;
 
-public class AdapterChecklist extends RecyclerView.Adapter<AdapterChecklist.ChecklistViewHolder>{
+public class AdapterChecklist extends RecyclerView.Adapter<AdapterChecklist.ChecklistViewHolder> {
     private final Activity mactivity;
-    private List<Checklist> mChecklist = new ArrayList<>();
+    private final List<Checklist> mChecklist = new ArrayList<>();
 
     AdapterChecklist(Activity activity) {
         this.mactivity = activity;
@@ -53,11 +53,13 @@ public class AdapterChecklist extends RecyclerView.Adapter<AdapterChecklist.Chec
             public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
 
             }
+
             @Override
             public void onTextChanged(CharSequence s, int i, int i1, int i2) {
                 // isikan datanya
                 mChecklist.get(holder.getAdapterPosition()).setNotes(s.toString());
             }
+
             @Override
             public void afterTextChanged(Editable editable) {
 
@@ -75,26 +77,26 @@ public class AdapterChecklist extends RecyclerView.Adapter<AdapterChecklist.Chec
                 checklist.setChecked(cb.isChecked());
 
                 // isikan checkboxnya datanya
-                getListData().get(holder.getAdapterPosition()).setChecked(cb.isChecked());
+                mChecklist.get(holder.getAdapterPosition()).setChecked(cb.isChecked());
             }
         });
-    }
-
-    class ChecklistViewHolder extends  RecyclerView.ViewHolder{
-            TextView item;
-            EditText notes;
-            CheckBox checked;
-
-        ChecklistViewHolder(View itemView){
-            super(itemView);
-            item = itemView.findViewById(R.id.item);
-            notes = itemView.findViewById(R.id.notes);
-            checked = itemView.findViewById(R.id.checkbox);
-        }
     }
 
     @Override
     public int getItemCount() {
         return mChecklist.size();
+    }
+
+    class ChecklistViewHolder extends RecyclerView.ViewHolder {
+        TextView item;
+        EditText notes;
+        CheckBox checked;
+
+        ChecklistViewHolder(View itemView) {
+            super(itemView);
+            item = itemView.findViewById(R.id.item);
+            notes = itemView.findViewById(R.id.notes);
+            checked = itemView.findViewById(R.id.checkbox);
+        }
     }
 }

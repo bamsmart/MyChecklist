@@ -2,7 +2,6 @@ package learning.shinesdev.mychecklist;
 
 
 import android.app.Application;
-import android.util.Log;
 
 import org.json.JSONArray;
 import org.json.JSONException;
